@@ -1,6 +1,6 @@
 export async function getData(city) {
     try {
-        let response = await fetch(`http://api.weatherapi.com/v1/current.json?key=7aa0e87b3a094a37906165204233007&q=${city}&aqi=no`, {mode: 'cors'});
+        let response = await fetch(`https://api.weatherapi.com/v1/current.json?key=7aa0e87b3a094a37906165204233007&q=${city}&aqi=no`, {mode: 'cors'});
         const weatherData = await response.json();
         return weatherData;
     }
